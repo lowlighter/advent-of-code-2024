@@ -1,4 +1,8 @@
 {
+  "tasks": {
+    "encrypt": "deno run --allow-read --allow-write crypt.ts --encrypt --password", // ${password} ${filename}
+    "decrypt": "deno run --allow-read --allow-write crypt.ts --decrypt --password" // ${password} ${filename}
+  },
   "fmt": {
     "semiColons": false,
     "lineWidth": 280

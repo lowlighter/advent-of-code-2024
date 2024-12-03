@@ -1,15 +1,47 @@
 {
   "version": "4",
   "specifiers": {
+    "jsr:@libs/crypto@*": "2.0.2",
+    "jsr:@libs/crypto@2": "2.0.2",
     "jsr:@std/cli@*": "1.0.7",
-    "jsr:@std/path@1": "1.0.8"
+    "jsr:@std/encoding@1": "1.0.5",
+    "jsr:@std/fs@1": "1.0.6",
+    "jsr:@std/path@1": "1.0.8",
+    "jsr:@std/path@^1.0.8": "1.0.8",
+    "npm:@types/node@*": "22.5.4"
   },
   "jsr": {
+    "@libs/crypto@2.0.2": {
+      "integrity": "c818623cfb0142bec737bc3bb40a6e73f5e971421cb3a5c54169cddefcca4fc7",
+      "dependencies": [
+        "jsr:@std/encoding"
+      ]
+    },
     "@std/cli@1.0.7": {
       "integrity": "98359df9df586a69015ba570305183b0cb9e7d53c05ea2016ef9a3e77e82c7cd"
     },
+    "@std/encoding@1.0.5": {
+      "integrity": "ecf363d4fc25bd85bd915ff6733a7e79b67e0e7806334af15f4645c569fefc04"
+    },
+    "@std/fs@1.0.6": {
+      "integrity": "42b56e1e41b75583a21d5a37f6a6a27de9f510bcd36c0c85791d685ca0b85fa2",
+      "dependencies": [
+        "jsr:@std/path@^1.0.8"
+      ]
+    },
     "@std/path@1.0.8": {
       "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
+    }
+  },
+  "npm": {
+    "@types/node@22.5.4": {
+      "integrity": "sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
+    "undici-types@6.19.8": {
+      "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
     }
   }
 }
